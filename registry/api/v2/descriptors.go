@@ -5,6 +5,7 @@ import (
 	"regexp"
 
 	"github.com/docker/distribution/digest"
+	"github.com/docker/distribution/reference"
 	"github.com/docker/distribution/registry/api/errcode"
 )
 
@@ -12,7 +13,7 @@ var (
 	nameParameterDescriptor = ParameterDescriptor{
 		Name:        "name",
 		Type:        "string",
-		Format:      RepositoryNameRegexp.String(),
+		Format:      reference.RepositoryNameRegexp.String(),
 		Required:    true,
 		Description: `Name of the target repository.`,
 	}
@@ -20,7 +21,7 @@ var (
 	referenceParameterDescriptor = ParameterDescriptor{
 		Name:        "reference",
 		Type:        "string",
-		Format:      TagNameRegexp.String(),
+		Format:      reference.TagRegexp.String(),
 		Required:    true,
 		Description: `Tag or digest of the target manifest.`,
 	}
@@ -398,7 +399,7 @@ var routeDescriptors = []RouteDescriptor{
 	},
 	{
 		Name:        RouteNameTags,
-		Path:        "/v2/{name:" + RepositoryNameRegexp.String() + "}/tags/list",
+		Path:        "/v2/{name:" + reference.RepositoryNameRegexp.String() + "}/tags/list",
 		Entity:      "Tags",
 		Description: "Retrieve information about tags.",
 		Methods: []MethodDescriptor{
@@ -488,7 +489,7 @@ var routeDescriptors = []RouteDescriptor{
 	},
 	{
 		Name:        RouteNameManifest,
-		Path:        "/v2/{name:" + RepositoryNameRegexp.String() + "}/manifests/{reference:" + TagNameRegexp.String() + "|" + digest.DigestRegexp.String() + "}",
+		Path:        "/v2/{name:" + reference.RepositoryNameRegexp.String() + "}/manifests/{reference:" + reference.TagRegexp.String() + "|" + digest.DigestRegexp.String() + "}",
 		Entity:      "Manifest",
 		Description: "Create, update, delete and retrieve manifests.",
 		Methods: []MethodDescriptor{
@@ -690,7 +691,7 @@ var routeDescriptors = []RouteDescriptor{
 
 	{
 		Name:        RouteNameBlob,
-		Path:        "/v2/{name:" + RepositoryNameRegexp.String() + "}/blobs/{digest:" + digest.DigestRegexp.String() + "}",
+		Path:        "/v2/{name:" + reference.RepositoryNameRegexp.String() + "}/blobs/{digest:" + digest.DigestRegexp.String() + "}",
 		Entity:      "Blob",
 		Description: "Operations on blobs identified by `name` and `digest`. Used to fetch or delete layers by digest.",
 		Methods: []MethodDescriptor{
@@ -921,7 +922,7 @@ var routeDescriptors = []RouteDescriptor{
 
 	{
 		Name:        RouteNameBlobUpload,
-		Path:        "/v2/{name:" + RepositoryNameRegexp.String() + "}/blobs/uploads/",
+		Path:        "/v2/{name:" + reference.RepositoryNameRegexp.String() + "}/blobs/uploads/",
 		Entity:      "Initiate Blob Upload",
 		Description: "Initiate a blob upload. This endpoint can be used to create resumable uploads or monolithic uploads.",
 		Methods: []MethodDescriptor{
@@ -1047,7 +1048,7 @@ var routeDescriptors = []RouteDescriptor{
 
 	{
 		Name:        RouteNameBlobUploadChunk,
-		Path:        "/v2/{name:" + RepositoryNameRegexp.String() + "}/blobs/uploads/{uuid:[a-zA-Z0-9-_.=]+}",
+		Path:        "/v2/{name:" + reference.RepositoryNameRegexp.String() + "}/blobs/uploads/{uuid:[a-zA-Z0-9-_.=]+}",
 		Entity:      "Blob Upload",
 		Description: "Interact with blob uploads. Clients should never assemble URLs for this endpoint and should only take it through the `Location` header on related API requests. The `Location` header and its parameters should be preserved by clients, using the latest value returned via upload related API calls.",
 		Methods: []MethodDescriptor{
