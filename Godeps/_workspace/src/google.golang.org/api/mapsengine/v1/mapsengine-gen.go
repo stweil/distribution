@@ -915,7 +915,7 @@ func (t GeoJsonGeometry) Polygon() (r GeoJsonPolygon, ok bool) {
 	return r, ok
 }
 
-// GeoJsonGeometryCollection: A heterogenous collection of
+// GeoJsonGeometryCollection: A heterogeneous collection of
 // GeoJsonGeometry objects.
 type GeoJsonGeometryCollection struct {
 	// Geometries: An array of geometry objects. There must be at least 2

@@ -106,7 +106,7 @@
     },
     "transferParams": {
      "type": "array",
-     "description": "The list of all possible transfer parameters for this application. These parameters can be used to select the data of the user in this application to be transfered.",
+     "description": "The list of all possible transfer parameters for this application. These parameters can be used to select the data of the user in this application to be transferred.",
      "items": {
       "$ref": "ApplicationTransferParam"
      }
@@ -125,7 +125,7 @@
     },
     "applicationTransferParams": {
      "type": "array",
-     "description": "The transfer parameters for the application. These parameters are used to select the data which will get transfered in context of this application.",
+     "description": "The transfer parameters for the application. These parameters are used to select the data which will get transferred in context of this application.",
      "items": {
       "$ref": "ApplicationTransferParam"
      }
@@ -208,11 +208,11 @@
     },
     "newOwnerUserId": {
      "type": "string",
-     "description": "ID of the user to whom the data is being transfered."
+     "description": "ID of the user to whom the data is being transferred."
     },
     "oldOwnerUserId": {
      "type": "string",
-     "description": "ID of the user whose data is being transfered."
+     "description": "ID of the user whose data is being transferred."
     },
     "overallTransferStatusCode": {
      "type": "string",

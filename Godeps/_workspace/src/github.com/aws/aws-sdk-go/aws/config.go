@@ -19,7 +19,7 @@ type RequestRetryer interface{}
 // all clients will use the {defaults.DefaultConfig} structure.
 type Config struct {
 	// Enables verbose error printing of all credential chain errors.
-	// Should be used when wanting to see all errors while attempting to retreive
+	// Should be used when wanting to see all errors while attempting to retrieve
 	// credentials.
 	CredentialsChainVerboseErrors *bool
 

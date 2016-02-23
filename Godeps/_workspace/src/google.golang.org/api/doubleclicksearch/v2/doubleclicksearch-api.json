@@ -364,7 +364,7 @@
    "properties": {
     "files": {
      "type": "array",
-     "description": "Asynchronous report only. Contains a list of generated report files once the report has succesfully completed.",
+     "description": "Asynchronous report only. Contains a list of generated report files once the report has successfully completed.",
      "items": {
       "type": "object",
       "properties": {

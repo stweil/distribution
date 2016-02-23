@@ -123,7 +123,7 @@ type UserUsageReportService struct {
 	s *Service
 }
 
-// Activities: JSON template for a collection of activites.
+// Activities: JSON template for a collection of activities.
 type Activities struct {
 	// Etag: ETag of the resource.
 	Etag string `json:"etag,omitempty"`
@@ -587,7 +587,7 @@ func (c *ActivitiesListCall) CustomerId(customerId string) *ActivitiesListCall {
 }
 
 // EndTime sets the optional parameter "endTime": Return events which
-// occured at or before this time.
+// occurred at or before this time.
 func (c *ActivitiesListCall) EndTime(endTime string) *ActivitiesListCall {
 	c.opt_["endTime"] = endTime
 	return c
@@ -623,7 +623,7 @@ func (c *ActivitiesListCall) PageToken(pageToken string) *ActivitiesListCall {
 }
 
 // StartTime sets the optional parameter "startTime": Return events
-// which occured at or after this time.
+// which occurred at or after this time.
 func (c *ActivitiesListCall) StartTime(startTime string) *ActivitiesListCall {
 	c.opt_["startTime"] = startTime
 	return c
@@ -766,7 +766,7 @@ func (c *ActivitiesListCall) Do() (*Activities, error) {
 	//       "type": "string"
 	//     },
 	//     "endTime": {
-	//       "description": "Return events which occured at or before this time.",
+	//       "description": "Return events which occurred at or before this time.",
 	//       "location": "query",
 	//       "pattern": "(\\d\\d\\d\\d)-(\\d\\d)-(\\d\\d)T(\\d\\d):(\\d\\d):(\\d\\d)(?:\\.(\\d+))?(?:(Z)|([-+])(\\d\\d):(\\d\\d))",
 	//       "type": "string"
@@ -796,7 +796,7 @@ func (c *ActivitiesListCall) Do() (*Activities, error) {
 	//       "type": "string"
 	//     },
 	//     "startTime": {
-	//       "description": "Return events which occured at or after this time.",
+	//       "description": "Return events which occurred at or after this time.",
 	//       "location": "query",
 	//       "pattern": "(\\d\\d\\d\\d)-(\\d\\d)-(\\d\\d)T(\\d\\d):(\\d\\d):(\\d\\d)(?:\\.(\\d+))?(?:(Z)|([-+])(\\d\\d):(\\d\\d))",
 	//       "type": "string"
@@ -856,7 +856,7 @@ func (c *ActivitiesWatchCall) CustomerId(customerId string) *ActivitiesWatchCall
 }
 
 // EndTime sets the optional parameter "endTime": Return events which
-// occured at or before this time.
+// occurred at or before this time.
 func (c *ActivitiesWatchCall) EndTime(endTime string) *ActivitiesWatchCall {
 	c.opt_["endTime"] = endTime
 	return c
@@ -892,7 +892,7 @@ func (c *ActivitiesWatchCall) PageToken(pageToken string) *ActivitiesWatchCall {
 }
 
 // StartTime sets the optional parameter "startTime": Return events
-// which occured at or after this time.
+// which occurred at or after this time.
 func (c *ActivitiesWatchCall) StartTime(startTime string) *ActivitiesWatchCall {
 	c.opt_["startTime"] = startTime
 	return c
@@ -1028,7 +1028,7 @@ func (c *ActivitiesWatchCall) Do() (*Channel, error) {
 	//       "type": "string"
 	//     },
 	//     "endTime": {
-	//       "description": "Return events which occured at or before this time.",
+	//       "description": "Return events which occurred at or before this time.",
 	//       "location": "query",
 	//       "pattern": "(\\d\\d\\d\\d)-(\\d\\d)-(\\d\\d)T(\\d\\d):(\\d\\d):(\\d\\d)(?:\\.(\\d+))?(?:(Z)|([-+])(\\d\\d):(\\d\\d))",
 	//       "type": "string"
@@ -1058,7 +1058,7 @@ func (c *ActivitiesWatchCall) Do() (*Channel, error) {
 	//       "type": "string"
 	//     },
 	//     "startTime": {
-	//       "description": "Return events which occured at or after this time.",
+	//       "description": "Return events which occurred at or after this time.",
 	//       "location": "query",
 	//       "pattern": "(\\d\\d\\d\\d)-(\\d\\d)-(\\d\\d)T(\\d\\d):(\\d\\d):(\\d\\d)(?:\\.(\\d+))?(?:(Z)|([-+])(\\d\\d):(\\d\\d))",
 	//       "type": "string"

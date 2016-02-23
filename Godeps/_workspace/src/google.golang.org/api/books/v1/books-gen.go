@@ -10561,7 +10561,7 @@ func (r *VolumesMybooksService) List() *VolumesMybooksListCall {
 }
 
 // AcquireMethod sets the optional parameter "acquireMethod": How the
-// book was aquired
+// book was acquired
 //
 // Possible values:
 //   "PREORDERED" - Preordered books (not yet available)
@@ -10724,7 +10724,7 @@ func (c *VolumesMybooksListCall) Do() (*Volumes, error) {
 	//   "id": "books.volumes.mybooks.list",
 	//   "parameters": {
 	//     "acquireMethod": {
-	//       "description": "How the book was aquired",
+	//       "description": "How the book was acquired",
 	//       "enum": [
 	//         "PREORDERED",
 	//         "PREVIOUSLY_RENTED",

@@ -1421,7 +1421,7 @@ type ReferenceSet struct {
 
 	// Md5checksum: Order-independent MD5 checksum which identifies this
 	// reference set. The checksum is computed by sorting all lower case
-	// hexidecimal string `reference.md5checksum` (for all reference in this
+	// hexadecimal string `reference.md5checksum` (for all reference in this
 	// set) in ascending lexicographic order, concatenating, and taking the
 	// MD5 of that value. The resulting value is represented in lower case
 	// hexadecimal format.

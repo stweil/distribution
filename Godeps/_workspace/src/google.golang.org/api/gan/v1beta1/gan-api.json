@@ -641,7 +641,7 @@
        },
        "publisherFee": {
         "$ref": "Money",
-        "description": "Fee that the advertiser paid to the publisehr for this product."
+        "description": "Fee that the advertiser paid to the publisher for this product."
        },
        "quantity": {
         "type": "string",

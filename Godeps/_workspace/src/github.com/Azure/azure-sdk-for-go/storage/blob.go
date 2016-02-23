@@ -257,7 +257,7 @@ type BlockResponse struct {
 	Size int64  `xml:"Size"`
 }
 
-// GetPageRangesResponse contains the reponse fields from
+// GetPageRangesResponse contains the response fields from
 // Get Page Ranges call.
 //
 // See https://msdn.microsoft.com/en-us/library/azure/ee691973.aspx

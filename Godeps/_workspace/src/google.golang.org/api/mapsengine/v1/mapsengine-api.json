@@ -588,7 +588,7 @@
   "GeoJsonGeometryCollection": {
    "id": "GeoJsonGeometryCollection",
    "type": "object",
-   "description": "A heterogenous collection of GeoJsonGeometry objects.",
+   "description": "A heterogeneous collection of GeoJsonGeometry objects.",
    "properties": {
     "geometries": {
      "type": "array",

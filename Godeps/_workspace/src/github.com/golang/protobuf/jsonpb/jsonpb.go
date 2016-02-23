@@ -387,7 +387,7 @@ type hasUnmarshalJSON interface {
 	UnmarshalJSON(data []byte) error
 }
 
-// parseFieldOptions returns the field name and if it should be omited.
+// parseFieldOptions returns the field name and if it should be omitted.
 func parseFieldOptions(f reflect.StructField) (string, bool) {
 	name := f.Name
 	omitEmpty := false

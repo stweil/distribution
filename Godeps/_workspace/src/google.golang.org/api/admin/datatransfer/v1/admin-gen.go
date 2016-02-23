@@ -115,7 +115,7 @@ type Application struct {
 
 	// TransferParams: The list of all possible transfer parameters for this
 	// application. These parameters can be used to select the data of the
-	// user in this application to be transfered.
+	// user in this application to be transferred.
 	TransferParams []*ApplicationTransferParam `json:"transferParams,omitempty"`
 
 	// ServerResponse contains the HTTP response code and headers from the
@@ -145,7 +145,7 @@ type ApplicationDataTransfer struct {
 
 	// ApplicationTransferParams: The transfer parameters for the
 	// application. These parameters are used to select the data which will
-	// get transfered in context of this application.
+	// get transferred in context of this application.
 	ApplicationTransferParams []*ApplicationTransferParam `json:"applicationTransferParams,omitempty"`
 
 	// ApplicationTransferStatus: Current status of transfer for this
@@ -245,10 +245,10 @@ type DataTransfer struct {
 	// Kind: Identifies the resource as a DataTransfer request.
 	Kind string `json:"kind,omitempty"`
 
-	// NewOwnerUserId: ID of the user to whom the data is being transfered.
+	// NewOwnerUserId: ID of the user to whom the data is being transferred.
 	NewOwnerUserId string `json:"newOwnerUserId,omitempty"`
 
-	// OldOwnerUserId: ID of the user whose data is being transfered.
+	// OldOwnerUserId: ID of the user whose data is being transferred.
 	OldOwnerUserId string `json:"oldOwnerUserId,omitempty"`
 
 	// OverallTransferStatusCode: Overall transfer status (Read-only).

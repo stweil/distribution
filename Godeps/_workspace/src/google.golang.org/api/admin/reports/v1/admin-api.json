@@ -84,7 +84,7 @@
   "Activities": {
    "id": "Activities",
    "type": "object",
-   "description": "JSON template for a collection of activites.",
+   "description": "JSON template for a collection of activities.",
    "properties": {
     "etag": {
      "type": "string",
@@ -475,7 +475,7 @@
       },
       "endTime": {
        "type": "string",
-       "description": "Return events which occured at or before this time.",
+       "description": "Return events which occurred at or before this time.",
        "pattern": "(\\d\\d\\d\\d)-(\\d\\d)-(\\d\\d)T(\\d\\d):(\\d\\d):(\\d\\d)(?:\\.(\\d+))?(?:(Z)|([-+])(\\d\\d):(\\d\\d))",
        "location": "query"
       },
@@ -505,7 +505,7 @@
       },
       "startTime": {
        "type": "string",
-       "description": "Return events which occured at or after this time.",
+       "description": "Return events which occurred at or after this time.",
        "pattern": "(\\d\\d\\d\\d)-(\\d\\d)-(\\d\\d)T(\\d\\d):(\\d\\d):(\\d\\d)(?:\\.(\\d+))?(?:(Z)|([-+])(\\d\\d):(\\d\\d))",
        "location": "query"
       },
@@ -554,7 +554,7 @@
       },
       "endTime": {
        "type": "string",
-       "description": "Return events which occured at or before this time.",
+       "description": "Return events which occurred at or before this time.",
        "pattern": "(\\d\\d\\d\\d)-(\\d\\d)-(\\d\\d)T(\\d\\d):(\\d\\d):(\\d\\d)(?:\\.(\\d+))?(?:(Z)|([-+])(\\d\\d):(\\d\\d))",
        "location": "query"
       },
@@ -584,7 +584,7 @@
       },
       "startTime": {
        "type": "string",
-       "description": "Return events which occured at or after this time.",
+       "description": "Return events which occurred at or after this time.",
        "pattern": "(\\d\\d\\d\\d)-(\\d\\d)-(\\d\\d)T(\\d\\d):(\\d\\d):(\\d\\d)(?:\\.(\\d+))?(?:(Z)|([-+])(\\d\\d):(\\d\\d))",
        "location": "query"
       },

@@ -1566,7 +1566,7 @@
     },
     "publishedAt": {
      "type": "string",
-     "description": "The date and time when the comment was orignally published. The value is specified in ISO 8601 (YYYY-MM-DDThh:mm:ss.sZ) format.",
+     "description": "The date and time when the comment was originally published. The value is specified in ISO 8601 (YYYY-MM-DDThh:mm:ss.sZ) format.",
      "format": "date-time"
     },
     "textDisplay": {

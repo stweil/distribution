@@ -4060,7 +4060,7 @@
        "parameters": {
         "acquireMethod": {
          "type": "string",
-         "description": "How the book was aquired",
+         "description": "How the book was acquired",
          "enum": [
           "PREORDERED",
           "PREVIOUSLY_RENTED",

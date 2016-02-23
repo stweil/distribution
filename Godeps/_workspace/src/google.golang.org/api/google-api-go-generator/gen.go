@@ -2213,7 +2213,7 @@ func validGoIdentifer(ident string) string {
 	return id
 }
 
-// depunct removes '-', '.', '$', '/', '_' from identifers, making the
+// depunct removes '-', '.', '$', '/', '_' from identifiers, making the
 // following character uppercase. Multiple '_' are preserved.
 func depunct(ident string, needCap bool) string {
 	var buf bytes.Buffer

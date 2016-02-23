@@ -746,7 +746,7 @@ type EventProducts struct {
 	// Network for this product.
 	NetworkFee *Money `json:"networkFee,omitempty"`
 
-	// PublisherFee: Fee that the advertiser paid to the publisehr for this
+	// PublisherFee: Fee that the advertiser paid to the publisher for this
 	// product.
 	PublisherFee *Money `json:"publisherFee,omitempty"`
 

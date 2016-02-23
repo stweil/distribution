@@ -5421,7 +5421,7 @@ type FloodlightActivity struct {
 	//   "XHTML"
 	TagFormat string `json:"tagFormat,omitempty"`
 
-	// TagString: Value of the cat= paramter in the floodlight tag, which
+	// TagString: Value of the cat= parameter in the floodlight tag, which
 	// the ad servers use to identify the activity. This is optional: if
 	// empty, a new tag string will be generated for you. This string must
 	// be 1 to 8 characters long, with valid characters being

@@ -277,7 +277,7 @@ type Avail struct {
 	// shall be encoded in accordance with RFC 5646. Example: "fr".
 	StoreLanguage string `json:"storeLanguage,omitempty"`
 
-	// SuppressionLiftDate: First date an Edit could be publically announced
+	// SuppressionLiftDate: First date an Edit could be publicly announced
 	// as becoming available at a specific future date in territory of
 	// Avail. *Not* the Avail start date or pre-order start date. Format is
 	// YYYY-MM-DD. Only available for pre-orders. Example: "2012-12-10"
@@ -748,7 +748,7 @@ type StoreInfo struct {
 
 	// Mid: Knowledge Graph ID associated to this Edit, if available. This
 	// ID links the Edit to its knowledge entity, externally accessible at
-	// http://freebase.com. In the absense of Title EIDR or Edit EIDR, this
+	// http://freebase.com. In the absence of Title EIDR or Edit EIDR, this
 	// ID helps link together multiple Edits across countries. Example:
 	// '/m/0ffx29'
 	Mid string `json:"mid,omitempty"`

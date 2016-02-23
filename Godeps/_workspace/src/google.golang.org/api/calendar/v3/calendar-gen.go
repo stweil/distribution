@@ -766,7 +766,7 @@ type Event struct {
 	HtmlLink string `json:"htmlLink,omitempty"`
 
 	// ICalUID: Event unique identifier as defined in RFC5545. It is used to
-	// uniquely identify events accross calendaring systems and must be
+	// uniquely identify events across calendaring systems and must be
 	// supplied when importing events via the import method.
 	// Note that the icalUID and the id are not identical and only one of
 	// them should be supplied at event creation time. One difference in

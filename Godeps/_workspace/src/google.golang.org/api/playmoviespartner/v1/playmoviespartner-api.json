@@ -244,7 +244,7 @@
     },
     "suppressionLiftDate": {
      "type": "string",
-     "description": "First date an Edit could be publically announced as becoming available at a specific future date in territory of Avail. *Not* the Avail start date or pre-order start date. Format is YYYY-MM-DD. Only available for pre-orders. Example: \"2012-12-10\""
+     "description": "First date an Edit could be publicly announced as becoming available at a specific future date in territory of Avail. *Not* the Avail start date or pre-order start date. Format is YYYY-MM-DD. Only available for pre-orders. Example: \"2012-12-10\""
     },
     "releaseDate": {
      "type": "string",
@@ -679,7 +679,7 @@
     },
     "mid": {
      "type": "string",
-     "description": "Knowledge Graph ID associated to this Edit, if available. This ID links the Edit to its knowledge entity, externally accessible at http://freebase.com. In the absense of Title EIDR or Edit EIDR, this ID helps link together multiple Edits across countries. Example: '/m/0ffx29'"
+     "description": "Knowledge Graph ID associated to this Edit, if available. This ID links the Edit to its knowledge entity, externally accessible at http://freebase.com. In the absence of Title EIDR or Edit EIDR, this ID helps link together multiple Edits across countries. Example: '/m/0ffx29'"
     },
     "trailerId": {
      "type": "string",

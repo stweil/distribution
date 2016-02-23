@@ -2150,7 +2150,7 @@ type UsersDataSourcesDatasetsPatchCall struct {
 
 // Patch: Adds data points to a dataset. The dataset need not be
 // previously created. All points within the given dataset will be
-// returned with subsquent calls to retrieve this dataset. Data points
+// returned with subsequent calls to retrieve this dataset. Data points
 // can belong to more than one dataset. This method does not use patch
 // semantics.
 func (r *UsersDataSourcesDatasetsService) Patch(userId string, dataSourceId string, datasetId string, dataset *Dataset) *UsersDataSourcesDatasetsPatchCall {
@@ -2254,7 +2254,7 @@ func (c *UsersDataSourcesDatasetsPatchCall) Do() (*Dataset, error) {
 	}
 	return ret, nil
 	// {
-	//   "description": "Adds data points to a dataset. The dataset need not be previously created. All points within the given dataset will be returned with subsquent calls to retrieve this dataset. Data points can belong to more than one dataset. This method does not use patch semantics.",
+	//   "description": "Adds data points to a dataset. The dataset need not be previously created. All points within the given dataset will be returned with subsequent calls to retrieve this dataset. Data points can belong to more than one dataset. This method does not use patch semantics.",
 	//   "httpMethod": "PATCH",
 	//   "id": "fitness.users.dataSources.datasets.patch",
 	//   "parameterOrder": [

@@ -20,7 +20,7 @@ import (
 // from the natural order of the encoded value of key=value.
 // Percent and gocheck.Equals affect the sorting order.
 func EncodeSorted(values url.Values) string {
-	// preallocate the arrays for perfomance
+	// preallocate the arrays for performance
 	keys := make([]string, 0, len(values))
 	sarray := make([]string, 0, len(values))
 	for k, _ := range values {

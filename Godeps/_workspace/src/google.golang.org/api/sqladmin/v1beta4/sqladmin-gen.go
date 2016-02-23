@@ -1075,7 +1075,7 @@ type MySqlReplicaConfiguration struct {
 	ClientCertificate string `json:"clientCertificate,omitempty"`
 
 	// ClientKey: PEM representation of the slave's private key. The
-	// corresponsing public key is encoded in the client's certificate.
+	// corresponding public key is encoded in the client's certificate.
 	ClientKey string `json:"clientKey,omitempty"`
 
 	// ConnectRetryInterval: Seconds to wait between connect retries.

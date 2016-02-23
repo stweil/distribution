@@ -5640,7 +5640,7 @@ type FloodlightActivity struct {
 	//   "XHTML"
 	TagFormat string `json:"tagFormat,omitempty"`
 
-	// TagString: Value of the cat= paramter in the floodlight tag, which
+	// TagString: Value of the cat= parameter in the floodlight tag, which
 	// the ad servers use to identify the activity. This is optional: if
 	// empty, a new tag string will be generated for you. This string must
 	// be 1 to 8 characters long, with valid characters being
@@ -9901,7 +9901,7 @@ func (s *TargetWindow) MarshalJSON() ([]byte, error) {
 // remarketing list. Remarketing enables you to create lists of users
 // who have performed specific actions on a site, then target ads to
 // members of those lists. This resource is a read-only view of a
-// remarketing list to be used to faciliate targeting ads to specific
+// remarketing list to be used to facilitate targeting ads to specific
 // lists. Remarketing lists that are owned by your advertisers and those
 // that are shared to your advertisers or account are accessible via
 // this resource. To manage remarketing lists that are owned by your

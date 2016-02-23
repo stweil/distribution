@@ -261,7 +261,7 @@ func TestReconnectTimeout(t *testing.T) {
 			t.Fatalf("TestService/UnaryCall(_, _) = _, <nil>, want _, non-nil")
 		}
 	}()
-	// Block untill reconnect times out.
+	// Block until reconnect times out.
 	<-waitC
 	if err := conn.Close(); err != grpc.ErrClientConnClosing {
 		t.Fatalf("%v.Close() = %v, want %v", conn, err, grpc.ErrClientConnClosing)

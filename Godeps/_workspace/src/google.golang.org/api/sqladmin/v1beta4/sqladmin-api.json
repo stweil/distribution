@@ -768,7 +768,7 @@
     },
     "clientKey": {
      "type": "string",
-     "description": "PEM representation of the slave's private key. The corresponsing public key is encoded in the client's certificate."
+     "description": "PEM representation of the slave's private key. The corresponding public key is encoded in the client's certificate."
     },
     "connectRetryInterval": {
      "type": "integer",

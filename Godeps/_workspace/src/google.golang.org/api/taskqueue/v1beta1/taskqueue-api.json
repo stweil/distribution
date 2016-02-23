@@ -99,7 +99,7 @@
     },
     "leaseTimestamp": {
      "type": "string",
-     "description": "Time (in seconds since the epoch) at which the task lease will expire. This value is 0 if the task isnt currently leased out to a worker.",
+     "description": "Time (in seconds since the epoch) at which the task lease will expire. This value is 0 if the task isn't currently leased out to a worker.",
      "format": "int64"
     },
     "payloadBase64": {

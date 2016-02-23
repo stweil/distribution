@@ -156,7 +156,7 @@ type SignedURLOptions struct {
 	// Optional.
 	ContentType string
 
-	// Headers is a list of extention headers the client must provide
+	// Headers is a list of extension headers the client must provide
 	// in order to use the generated signed URL.
 	// Optional.
 	Headers []string

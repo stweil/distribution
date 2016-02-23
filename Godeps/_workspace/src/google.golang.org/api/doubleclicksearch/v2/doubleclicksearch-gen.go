@@ -371,7 +371,7 @@ func (s *CustomMetric) MarshalJSON() ([]byte, error) {
 // generated report rows or report files.
 type Report struct {
 	// Files: Asynchronous report only. Contains a list of generated report
-	// files once the report has succesfully completed.
+	// files once the report has successfully completed.
 	Files []*ReportFiles `json:"files,omitempty"`
 
 	// Id: Asynchronous report only. Id of the report.

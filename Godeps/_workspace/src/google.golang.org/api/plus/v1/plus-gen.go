@@ -3495,7 +3495,7 @@ func (c *PeopleListCall) MaxResults(maxResults int64) *PeopleListCall {
 //
 // Possible values:
 //   "alphabetical" - Order the people by their display name.
-//   "best" - Order people based on the relevence to the viewer.
+//   "best" - Order people based on the relevance to the viewer.
 func (c *PeopleListCall) OrderBy(orderBy string) *PeopleListCall {
 	c.opt_["orderBy"] = orderBy
 	return c
@@ -3644,7 +3644,7 @@ func (c *PeopleListCall) Do() (*PeopleFeed, error) {
 	//       ],
 	//       "enumDescriptions": [
 	//         "Order the people by their display name.",
-	//         "Order people based on the relevence to the viewer."
+	//         "Order people based on the relevance to the viewer."
 	//       ],
 	//       "location": "query",
 	//       "type": "string"

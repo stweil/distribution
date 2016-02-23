@@ -111,7 +111,7 @@ type Task struct {
 	Kind string `json:"kind,omitempty"`
 
 	// LeaseTimestamp: Time (in seconds since the epoch) at which the task
-	// lease will expire. This value is 0 if the task isnt currently leased
+	// lease will expire. This value is 0 if the task isn't currently leased
 	// out to a worker.
 	LeaseTimestamp int64 `json:"leaseTimestamp,omitempty,string"`
 

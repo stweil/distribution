@@ -46,7 +46,7 @@ func TestBashCompletions(t *testing.T) {
 	validArgs := []string{"pods", "nodes", "services", "replicationControllers"}
 	c.ValidArgs = validArgs
 
-	// filename extentions
+	// filename extensions
 	annotations := make([]string, 3)
 	annotations[0] = "json"
 	annotations[1] = "yaml"
@@ -75,7 +75,7 @@ func TestBashCompletions(t *testing.T) {
 	check(t, str, `COMPREPLY=( "hello" )`)
 	// check for required nouns
 	check(t, str, `must_have_one_noun+=("pods")`)
-	// check for filename extention flags
+	// check for filename extension flags
 	check(t, str, `flags_completion+=("__handle_filename_extension_flag json|yaml|yml")`)
 
 	checkOmit(t, str, cmdDeprecated.Name())

@@ -804,7 +804,7 @@
           },
           "geoCriteriaId": {
            "type": "array",
-           "description": "Only set when contextType=LOCATION. Represents the geo criterias this restriction applies to.",
+           "description": "Only set when contextType=LOCATION. Represents the geo criteria this restriction applies to.",
            "items": {
             "type": "integer",
             "format": "int32"

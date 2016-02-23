@@ -381,12 +381,12 @@ type Debuggee struct {
 	SourceContexts []*SourceContext `json:"sourceContexts,omitempty"`
 
 	// Status: Human readable message to be displayed to the user about this
-	// debuggee. Absense of this field indicates no message. The message can
+	// debuggee. Absence of this field indicates no message. The message can
 	// be either informational or error.
 	Status *StatusMessage `json:"status,omitempty"`
 
 	// Uniquifier: The debuggee uniqifier within the project. Any string
-	// that id the application within the project can be used. Recomended to
+	// that id the application within the project can be used. Recommended to
 	// include environement and version or build id's.
 	Uniquifier string `json:"uniquifier,omitempty"`
 
@@ -479,7 +479,7 @@ func (s *GerritSourceContext) MarshalJSON() ([]byte, error) {
 // information.
 type GetBreakpointResponse struct {
 	// Breakpoint: The complete breakpoint state. The fields 'id' and
-	// 'location' are guranteed to be set.
+	// 'location' are guaranteed to be set.
 	Breakpoint *Breakpoint `json:"breakpoint,omitempty"`
 
 	// ServerResponse contains the HTTP response code and headers from the
@@ -529,7 +529,7 @@ func (s *GitSourceContext) MarshalJSON() ([]byte, error) {
 // breakpoints.
 type ListActiveBreakpointsResponse struct {
 	// Breakpoints: List of all active breakpoints. The fields 'id' and
-	// 'location' are guranteed to be set on each breakpoint.
+	// 'location' are guaranteed to be set on each breakpoint.
 	Breakpoints []*Breakpoint `json:"breakpoints,omitempty"`
 
 	// NextWaitToken: A wait token that can be used in the next method call
@@ -558,7 +558,7 @@ func (s *ListActiveBreakpointsResponse) MarshalJSON() ([]byte, error) {
 // ListBreakpointsResponse: The response of listing breakpoints.
 type ListBreakpointsResponse struct {
 	// Breakpoints: List of all breakpoints with complete state. The fields
-	// 'id' and 'location' are guranteed to be set on each breakpoint.
+	// 'id' and 'location' are guaranteed to be set on each breakpoint.
 	Breakpoints []*Breakpoint `json:"breakpoints,omitempty"`
 
 	// NextWaitToken: A wait token that can be used in the next call to
@@ -589,7 +589,7 @@ type ListDebuggeesResponse struct {
 	// Debuggees: The list of debuggees accessible to the calling user. Note
 	// that the description field is the only human readable field that
 	// should be displayed to the user. The fields 'debuggee.id' and
-	// 'description' are guranteed to be set on each debuggee.
+	// 'description' are guaranteed to be set on each debuggee.
 	Debuggees []*Debuggee `json:"debuggees,omitempty"`
 
 	// ServerResponse contains the HTTP response code and headers from the
@@ -659,7 +659,7 @@ func (s *RegisterDebuggeeRequest) MarshalJSON() ([]byte, error) {
 
 // RegisterDebuggeeResponse: The response of registering a debuggee.
 type RegisterDebuggeeResponse struct {
-	// Debuggee: The debuggee resource. The field 'id' is guranteed to be
+	// Debuggee: The debuggee resource. The field 'id' is guaranteed to be
 	// set (in addition to the echoed fields).
 	Debuggee *Debuggee `json:"debuggee,omitempty"`
 
@@ -707,7 +707,7 @@ func (s *RepoId) MarshalJSON() ([]byte, error) {
 
 // SetBreakpointResponse: The response of setting a breakpoint.
 type SetBreakpointResponse struct {
-	// Breakpoint: The breakpoint resource. The field 'id' is guranteed to
+	// Breakpoint: The breakpoint resource. The field 'id' is guaranteed to
 	// be set (in addition to the echoed fileds).
 	Breakpoint *Breakpoint `json:"breakpoint,omitempty"`
 
@@ -897,7 +897,7 @@ type UpdateActiveBreakpointResponse struct {
 // } } 4. A pointer where the pointee was not captured or is
 // inaccessible such as, T* p = new T; is represented as: { name: "p",
 // value: "0x00400400", members { value: "" } } the value text should
-// decribe the reason for the missing value. such as , ,
+// describe the reason for the missing value. such as , ,
 // . note that a null pointer should not have members. 5. An unnamed
 // value such as, int* p = new int(7); is represented as, { name: "p",
 // value: "0x00500500", members { value: "7" } } 6. An unnamed pointer

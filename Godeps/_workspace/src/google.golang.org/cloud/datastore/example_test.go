@@ -203,7 +203,7 @@ func ExampleQuery() {
 	// Use the iterator.
 	_ = it
 
-	// Order the posts by the number of comments they have recieved.
+	// Order the posts by the number of comments they have received.
 	datastore.NewQuery("Post").Order("-Comments")
 
 	// Start listing from an offset and limit the results.

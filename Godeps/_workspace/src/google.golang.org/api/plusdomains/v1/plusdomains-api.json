@@ -2113,7 +2113,7 @@
        ],
        "enumDescriptions": [
         "Order the people by their display name.",
-        "Order people based on the relevence to the viewer."
+        "Order people based on the relevance to the viewer."
        ],
        "location": "query"
       },

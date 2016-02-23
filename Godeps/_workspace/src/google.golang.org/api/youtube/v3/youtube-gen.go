@@ -2093,7 +2093,7 @@ type CommentSnippet struct {
 	// ParentId: The unique id of the parent comment, only set for replies.
 	ParentId string `json:"parentId,omitempty"`
 
-	// PublishedAt: The date and time when the comment was orignally
+	// PublishedAt: The date and time when the comment was originally
 	// published. The value is specified in ISO 8601
 	// (YYYY-MM-DDThh:mm:ss.sZ) format.
 	PublishedAt string `json:"publishedAt,omitempty"`

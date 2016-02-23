@@ -69,7 +69,7 @@ func addMemoryMericsToComponent(component newrelic_platform_go.IComponent, pollI
 			dataSourceKey: "runtime.MemStats.Frees",
 		},
 
-		// Sytem memory allocations
+		// System memory allocations
 		&baseGoMetrica{
 			name:          "SysMem/Total",
 			units:         "bytes",

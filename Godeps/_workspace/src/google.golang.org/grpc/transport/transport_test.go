@@ -126,7 +126,7 @@ func (h *testStreamHandler) handleStreamMisbehave(s *Stream) {
 	}
 }
 
-// start starts server. Other goroutines should block on s.readyChan for futher operations.
+// start starts server. Other goroutines should block on s.readyChan for further operations.
 func (s *server) start(port int, maxStreams uint32, ht hType) {
 	var err error
 	if port == 0 {

@@ -1189,7 +1189,7 @@ type CreativeServingRestrictionsContexts struct {
 	ContextType string `json:"contextType,omitempty"`
 
 	// GeoCriteriaId: Only set when contextType=LOCATION. Represents the geo
-	// criterias this restriction applies to.
+	// criteria this restriction applies to.
 	GeoCriteriaId []int64 `json:"geoCriteriaId,omitempty"`
 
 	// Platform: Only set when contextType=PLATFORM. Represents the

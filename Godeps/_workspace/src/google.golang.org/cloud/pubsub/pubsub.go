@@ -114,7 +114,7 @@ func NewClient(ctx context.Context, projectID string, opts ...cloud.ClientOption
 // precision greater than one second.
 //
 // As new messages are being queued on the subscription, you
-// may recieve push notifications regarding to the new arrivals.
+// may receive push notifications regarding to the new arrivals.
 // To receive notifications of new messages in the queue,
 // specify an endpoint callback URL.
 // If endpoint is an empty string the backend will not notify the

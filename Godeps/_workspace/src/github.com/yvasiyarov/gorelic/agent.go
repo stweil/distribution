@@ -16,12 +16,12 @@ const (
 
 	// DefaultGcPollIntervalInSeconds - how often we will get garbage collector run statistic
 	// Default value is - every 10 seconds
-	// During GC stat pooling - mheap will be locked, so be carefull changing this value
+	// During GC stat pooling - mheap will be locked, so be careful changing this value
 	DefaultGcPollIntervalInSeconds = 10
 
 	// DefaultMemoryAllocatorPollIntervalInSeconds - how often we will get memory allocator statistic.
 	// Default value is - every 60 seconds
-	// During this process stoptheword() is called, so be carefull changing this value
+	// During this process stoptheword() is called, so be careful changing this value
 	DefaultMemoryAllocatorPollIntervalInSeconds = 60
 
 	//DefaultAgentGuid is plugin ID in NewRelic.

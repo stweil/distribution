@@ -371,7 +371,7 @@ func (c *Client) Flush() error {
 			// Otherwise, re-obtain the lock and loop,
 			// starting over with seeing if a flush is in
 			// progress, which might've been started by a
-			// different goroutine before aquiring this
+			// different goroutine before acquiring this
 			// lock again.
 			c.mu.Lock()
 			continue
